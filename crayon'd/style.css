@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+}
+
+.logo img
+{
+  height: 55px;
+}
+
+nav ul
+{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+nav ul li a:hover
+{
+  color: #7a5df0;
+  border-bottom: 2px solid #7a5df0;
+  padding-bottom: 4px;
+  transition: 0.3s;
+}
+
+.btn-outline
+{
+  padding: 10px 18px;
+  border: 2px solid #7a5df0;
+  color: #7a5df0;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover
+{
+  background-color: #7a5df0;
+  color: #fff;
+  cursor: pointer;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  padding: 0 10%;
+}
+
+.hero
+{
+  max-width: 1250px;
+  text-align: center;
+}
+
+.hero-text p:first-of-type
+{
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.no-break
+{
+  white-space: nowrap;
+}
+
+.hero-text p:first-of-type span
+{
+  padding: 0 10px;
+}
+
+.hero-text p:nth-of-type(2)
+{
+  font-size: 20px;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero-buttons
+{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary
+{
+  background-color: #7a5df0;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover
+{
+  background-color: #674ed3;
+}
+
+.trusted-section
+{
+  text-align: center;
+  padding: 60px 10% 30px;
+}
+
+.trusted-section h2
+{
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.happy
+{
+  padding: 150px 10%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.happy-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.happy-container img
+{
+  max-width: 130px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.happy-container h2
+{
+  flex: 1;
+  font-size: 18px;
+  color: #444;
+}
+
+.logo-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-grid img,
+.centered-images img
+{
+  margin: 10px;
+}
+
+.logo-grid img
+{
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-grid img[alt="Chennai Super Kings"]
+{
+  max-width: 90px;
+}
+
+.logo-grid img[alt="Synergy Group"]
+{
+  max-width: 60px;
+}
+
+.centered-images
+{
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer
+{
+  background: #ffffff;
+  padding: 40px 10%;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer .footer-col
+{
+  flex: 1 1 180px;
+  margin-bottom: 20px;
+}
+
+footer .footer-col h4
+{
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+footer .footer-col ul
+{
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-col ul li
+{
+  margin-bottom: 10px;
+}
+
+footer .footer-col ul li a
+{
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+footer .footer-col ul li a:hover
+{
+  color: #7a5df0;
+}
+
+@media (max-width: 900px)
+{ 
+  footer
+  {
+    flex-direction: column;
+  }
+  footer .footer-col
+  {
+    flex: 1 1 100%;
+  }
+}
